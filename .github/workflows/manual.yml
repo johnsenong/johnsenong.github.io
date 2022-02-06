@@ -1,0 +1,13 @@
+name: This is a test Github Workflow
+on:
+  workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run one line script
+        run: echo Hello World
+      - name: Run multiple line script
+        run: |
+          echo Hello Again
+          echo This is the second line
