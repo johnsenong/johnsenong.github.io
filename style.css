@@ -2,31 +2,66 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
 }
+
 .container {
     max-width: 900px;
-    margin: auto;
-    padding: 2rem;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
     background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
+
+.profile-header {
+    background: rgba(14, 118, 168, 0.07);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(14, 118, 168, 0.08);
+    transition: box-shadow 0.2s;
+}
+
+.profile-header:hover {
+    box-shadow: 0 4px 16px rgba(14, 118, 168, 0.15);
+}
+
+.container, .profile-header, .section {
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
 h1, h2 {
     color: #0e76a8;
 }
+
 h1 {
     font-size: 2.2rem;
     margin-bottom: 0;
 }
+
 h2 {
     margin-top: 2rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.5rem;
 }
+
 .section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 1px 4px rgba(14, 118, 168, 0.05);
 }
+
 ul {
     padding-left: 1.2rem;
 }
@@ -44,4 +79,85 @@ a {
     display: inline-block;
     border-radius: 4px;
     font-size: 0.9rem;
+}
+.download-btn {
+    display: inline-block;
+    background: #0e76a8;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.download-btn:hover {
+    background: #095a8a;
+}
+.skill {
+    background: #e0e0e0;
+    padding: 0.3rem 0.7rem;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.skill.cloud { background: #e3f2fd; color: #1976d2; }
+.skill.container { background: #e8f5e9; color: #388e3c; }
+.skill.monitoring { background: #fff3e0; color: #f57c00; }
+.skill.iac { background: #f3e5f5; color: #7b1fa2; }
+.skill.os { background: #fbe9e7; color: #d84315; }
+.skill.scripting { background: #ede7f6; color: #5e35b1; }
+.skill.cicd { background: #f9fbe7; color: #827717; }
+.skill.network { background: #e0f2f1; color: #00897b; }
+
+.job {
+    margin-bottom: 2.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #e3eaf3;
+}
+.job-header {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0e76a8;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.job-date {
+    font-size: 0.95rem;
+    color: #888;
+    font-weight: 400;
+}
+.job-tasks {
+    margin: 0 0 0.5rem 0;
+    padding-left: 1.2rem;
+}
+.job-tasks li {
+    margin-bottom: 0.2rem;
+}
+.tech {
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 3px;
+    padding: 0 0.3em;
+    font-size: 0.95em;
+    margin-left: 0.2em;
+}
+.achievements {
+    margin-top: 0.5rem;
+    background: #f5fafd;
+    border-left: 4px solid #0e76a8;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(14, 118, 168, 0.05);
+}
+.achievements ul {
+    margin: 0.3rem 0 0 0;
+    padding-left: 1.2rem;
+}
+.achievements li {
+    margin-bottom: 0.3rem;
+    font-weight: 500;
 }
