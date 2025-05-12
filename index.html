@@ -1,5 +1,233 @@
-<html>
-<body>
-<h1/> Hello World from Johnsen!
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Johnsen | SRE / DevOps Engineer</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile-header" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="profile.jpg" alt="Johnsen Ong" style="width:80px; height:80px; border-radius:50%; object-fit:cover;">
+                <div>
+                    <h1>Johnsen</h1>
+                    <p class="contact">Email: johnsen.ong@gmail.com | GitHub: <a href="https://github.com/johnsenong">johnsenong</a> | Location: Sydney, Australia</p>
+                    <p><a href="resume.pdf" class="download-btn" target="_blank" download>⬇️ Download Resume (PDF)</a></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>About Me</h2>
+                <p>Experienced Site Reliability Engineer / DevOps Engineer with a strong background in cloud infrastructure, CI/CD automation, container orchestration, and monitoring. Passionate about building reliable systems at scale.</p>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>SRE</strong> - Willis Towers Watson (WTW) <span class="job-date">(Jun 2023 - Present)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Built monitoring and dashboards <span class="tech">(Datadog)</span></li>
+                        <li>Defined SLOs to enhance system reliability</li>
+                        <li>Automated manual tasks to reduce operational toil</li>
+                        <li>Optimized CI/CD pipelines, reducing build and deployment time</li>
+                        <li>Deployed Azure resources using <span class="tech">Pulumi</span> as the main IaC tool</li>
+                    </ul>
+                    <div class="achievements">
+                        <strong>Key Achievements</strong>
+                        <ul>
+                            <li>🏆 <b>Reduced client onboarding time</b> from 1.5 days to 1 day</li>
+                            <li>⭐ <b>Cut alert noise</b> from ~50+ to &lt;20 alerts per day</li>
+                            <li>🚀 <b>Improved CI/CD pipeline</b> from 40 minutes to 25 minutes</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>SRE</strong> - OFX <span class="job-date">(Feb 2022 - Jun 2023)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Automated infrastructure with <span class="tech">CloudFormation</span> and <span class="tech">Terraform</span></li>
+                        <li>Wrote and optimized CI/CD pipelines in <span class="tech">GitHub Actions</span> and <span class="tech">OctopusDeploy</span></li>
+                        <li>Enhanced monitoring and observability (Datadog Synthetics, APM, Monitor and Dashboards)</li>
+                        <li>Conducted post-incident reviews to improve system reliability</li>
+                    </ul>
+                    <div class="achievements">
+                        <strong>Key Achievements</strong>
+                        <ul>
+                            <li>☁️ AWS Migrations (EC2 to AWS Fargate)</li>
+                            <li>🔄 Migrated local scripts to AWS Lambda</li>
+                            <li>💡 Proposed solution for RabbitMQ migration to AmazonMQ</li>
+                            <li>🛠️ Created reusable Terraform module for Datadog Monitors</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>Infrastructure Engineer</strong> - Appen <span class="job-date">(Jan 2021 - Jan 2022)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Managed cloud & on-prem environments (<span class="tech">AWS</span>, <span class="tech">Azure</span>, Active Directory)</li>
+                        <li>Administered networks (Palo Alto, Sophos) and MDM solutions (JAMF, Intune)</li>
+                        <li>Automated workflows using <span class="tech">PowerShell</span> and <span class="tech">Bash</span></li>
+                        <li>Monitored system reliability (Pingdom, New Relic)</li>
+                    </ul>
+                    <div class="achievements">
+                        <strong>Key Achievements</strong>
+                        <ul>
+                            <li>📦 Migrated local file server to AWS EFS</li>
+                            <li>⚡ Cut new user setup time from 4 hours to &lt;2 hours via PowerShell automation</li>
+                            <li>💻 Reduced laptop onboarding time from 4 hours to &lt;2 hours with Intune</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>IT Engineer</strong> - Escadia <span class="job-date">(Jan 2019 - Jan 2021)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Managed clients' overall IT Infrastructure (Servers, VMs, Networks, Applications)</li>
+                        <li>Monitored alerts and ensured service reliability</li>
+                        <li>Proactively maintained and recommended IT modernization</li>
+                        <li>Worked with technologies: Windows, Office365, Exchange, Cisco, Palo Alto</li>
+                    </ul>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>IT Engineer</strong> - FremantleMedia Australia (Contract) <span class="job-date">(Jun 2018 - Dec 2018)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Maintained corporate IT system (AD, DNS, Office365, GPOs)</li>
+                        <li>Managed on-prem servers (VMs) and cloud servers (AWS)</li>
+                        <li>MDM Management (JAMF, Intune)</li>
+                        <li>Modernized IT system (Automation, Alerts, Backups)</li>
+                        <li>Network administration (Ruckus, Palo Alto, Juniper)</li>
+                    </ul>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>Associate Engineer</strong> - Ricoh Australia (Contract) <span class="job-date">(Dec 2017 - Jun 2018)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Managed Service Provider - Tier 1-2 Support</li>
+                    </ul>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>IT Helpdesk Support</strong> - Hotelscombined (Contract) <span class="job-date">(Nov 2017 - Dec 2017)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>In-house IT Support, assisting all IT issues and requests from internal users</li>
+                    </ul>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>Career Break</strong> - Working Holiday <span class="job-date">(Jun 2017 - Oct 2017)</span>
+                    </div>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>IT Level 2 Support</strong> - Priority Networking (Contract) <span class="job-date">(Feb 2017 - Jun 2017)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Managed Service Provider - Tier 2 Support</li>
+                        <li>Maintained clients' IT infrastructure (Office365, AD, DNS, Antivirus, Backups, Networks)</li>
+                        <li>Escalation point from Tier 1 Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Overseas Experience</h2>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>IT & Control Engineer</strong> - Vanderlande Industries <span class="job-date">(Nov 2014 - Dec 2016)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Covers all IT-related systems in Indonesia Airport Projects</li>
+                        <li>Managed enterprise-scale servers (HP Proliant, MSA, UPS)</li>
+                        <li>Administered Windows Server 2008, Active Directory, GPO, and failover clustering</li>
+                    </ul>
+                    <div class="achievements">
+                        <strong>Key Achievements</strong>
+                        <ul>
+                            <li>✈️ <b>Delivered</b> robust IT infrastructure for multiple airport projects</li>
+                            <li>🔒 <b>Implemented</b> high-availability solutions with failover clustering</li>
+                            <li>⚡ <b>Streamlined</b> server deployment and maintenance processes</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="job">
+                    <div class="job-header">
+                        <strong>Senior IT Infrastructure Engineer</strong> - Wilmar International Ltd <span class="job-date">(Apr 2011 - Dec 2014)</span>
+                    </div>
+                    <ul class="job-tasks">
+                        <li>Managed enterprise-scale servers (HP Proliant, BladeSystem, HP BL series, RAID Controllers)</li>
+                        <li>Administered Windows OS (Server 2003, 2008, XP, Win7)</li>
+                        <li>Oversaw domain services (AD, DNS, GPO)</li>
+                        <li>Led project-related works and infrastructure upgrades</li>
+                        <li>Active Directory rollout and Office365 implementation</li>
+                        <li>Mail server migration (Mdaemon to Lotus Domino)</li>
+                        <li>ERP (Invoices capture - ReadSoft) implementation</li>
+                    </ul>
+                    <div class="achievements">
+                        <strong>Key Achievements</strong>
+                        <ul>
+                            <li>🏅 <b>Led</b> successful Active Directory rollout across multiple sites</li>
+                            <li>📧 <b>Migrated</b> mail servers with minimal downtime</li>
+                            <li>🗃️ <b>Implemented</b> ERP invoice capture, improving finance workflow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <span class="skill cloud">AWS</span>
+                    <span class="skill cloud">Azure</span>
+                    <span class="skill container">Kubernetes</span>
+                    <span class="skill monitoring">Datadog</span>
+                    <span class="skill iac">Pulumi (Dotnet)</span>
+                    <span class="skill iac">CloudFormation</span>
+                    <span class="skill os">Linux</span>
+                    <span class="skill os">Windows</span>
+                    <span class="skill scripting">Powershell</span>
+                    <span class="skill scripting">Bash</span>
+                    <span class="skill scripting">Python</span>
+                    <span class="skill cicd">CI/CD</span>
+                    <span class="skill cicd">GitHub Actions</span>
+                    <span class="skill cicd">Azure DevOps</span>
+                    <span class="skill network">Network (Firewall/Switches)</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="https://witty-sea-04b1bcd00.6.azurestaticapps.net/">Flight Reward Search</a>: Flight Reward Scrapper with Azure, Terraform, GithubAction, Python, React and CSV</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p>B.Sc. in Information Technology – STIKOM Medan & UNIR (2007-2011)</p>
+            </div>
+            </div>
+        </div>
+    </body>    
 </html>
